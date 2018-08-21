@@ -1,0 +1,3 @@
+using WinPath
+
+@test out()
