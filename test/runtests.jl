@@ -1,3 +1,4 @@
-using WinPath
+import WinPath
 
-@test out()
+@test WinPath.in()
+@test WinPath.out()
