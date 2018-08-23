@@ -42,8 +42,6 @@ function config()
     return config
 end
 
-const CONFIG = config()
-
 function getPath()
     return WinReg.querykey(BASE, PATH, VALUENAME)
 end
@@ -57,6 +55,7 @@ function out()
     open(CONFIG.outPath, "w+") do file
         write(file, outData)
     end
+    return nothing
 end
 
 function in()
@@ -70,7 +69,9 @@ function in()
             write(infile, list)
         end
     end
-    return list
+    return nothing
 end
+
+const CONFIG = config()
 
 end
