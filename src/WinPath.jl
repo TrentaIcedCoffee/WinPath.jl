@@ -72,6 +72,10 @@ function in()
     return nothing
 end
 
+function getConfig()
+    println(CONFIG)
+end
+
 const CONFIG = config()
 
 end
