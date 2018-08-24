@@ -5,7 +5,7 @@ import WinReg
 import JSON
 import Base
 
-export in, out
+export in, out, getConfig
 
 const BASE = WinReg.HKEY_LOCAL_MACHINE
 const PATH = "System\\ControlSet001\\Control\\Session Manager\\Environment"
