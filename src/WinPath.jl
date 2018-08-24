@@ -10,7 +10,7 @@ export in, out, getConfig
 const BASE = WinReg.HKEY_LOCAL_MACHINE
 const PATH = "System\\ControlSet001\\Control\\Session Manager\\Environment"
 const VALUENAME = "Path"
-const CONFIG_PATH = "./config.json"
+const CONFIG_PATH = "./src/config.json"
 
 struct Config
     root::AbstractString
