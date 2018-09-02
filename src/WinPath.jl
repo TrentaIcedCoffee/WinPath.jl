@@ -64,6 +64,7 @@ function in()
         for ln in readlines(outfile)
             push!(list, ln)
         end
+        list = sort(list)
         list = join(list, ";")
         open(CONFIG.inPath, "w+") do infile
             write(infile, list)
